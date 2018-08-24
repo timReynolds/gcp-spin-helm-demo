@@ -4,11 +4,11 @@ steps:
       [
         "build",
         "-t",
-        "eu.gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH-$COMMIT_SHA",
+        "eu.gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH_NAME-$COMMIT_SHA",
         "-t",
         "eu.gcr.io/$PROJECT_ID/$REPO_NAME:latest",
         ".",
       ]
 images:
-- "eu.gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH-$COMMIT_SHA"
+- "eu.gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH_NAME-$COMMIT_SHA"
 - "eu.gcr.io/$PROJECT_ID/$REPO_NAME:latest"
